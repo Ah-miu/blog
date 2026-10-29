@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not found</title>
+<script>
+(function () {
+  var p = location.pathname, m = p.match(/^[/]blog[/]ah-miu(\/.*)?$/i);
+  if (m && p.indexOf('/blog/Ah-miu') !== 0) location.replace('/blog/Ah-miu' + (m[1] || '/') + location.search + location.hash);
+})();
+</script>
+<style>
+html { background: #000; color: #f3efe8; font: 15px -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; }
+body { display: grid; place-items: center; min-height: 100vh; margin: 0; }
+a { color: #ff4834; }
+</style>
+</head>
+<body><p>Page not found. <a href="/blog/Ah-miu/">Ah-miu</a></p></body>
+</html>
